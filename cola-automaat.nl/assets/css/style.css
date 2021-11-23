@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambay&family=Martel:wght@400;800&display=swap&family=Raleway:wght@600;800&display=swap');
+@font-face {
+    font-family: Magneto;
+    font-family: Raleway, sans-serif;
+    font-family: Cambay, sans-serif;
+    font-family: Martel, serif;
+    src: url("../font/MAGNETOB.TTF");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 62.5%; 
+}
+
+body {
+    background: #fff;
+}
+
+.gradiant{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    position: relative;
+}
+
+.gradiant:before {
+    background-image: linear-gradient(100deg, #db3535, rgba(124, 0, 0, 1) 100%);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    top: -40%;
+    transform: skewY(26deg) scaleY(2);
+    z-index: -2;
+}
+
+.angle {
+    width: 85%;
+    height: 100%;
+    min-height: 70rem;
+    z-index: -1;
+    background-image: linear-gradient(100deg, #db3535 20%, rgba(124, 0, 0, 1));
+    position: absolute;
+    transform: skewY(26deg);
+    top: -60%;
+}
+
+.angle2 {
+    width: 85%;
+    height: 100%;
+    min-height: 70rem;
+    z-index: -1;
+    background-image: linear-gradient(100deg, #db3535, rgba(124, 0, 0, 1) 100%);
+    position: absolute;
+    transform: skewY(26deg);
+    top: -100%;
+    left: -10%;
+}
+
+.container {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+nav h1 {
+    font-size: 2.4rem;
+    font-family: Magneto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.contact {
+    font-size: 2rem;
+    font-family: Cambay;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    background: #fff;
+    color: #7C0000;
+    text-decoration: none;
+}
+
+section {
+    padding: 10rem;
+}
+
+.container section {
+    padding: 10rem 0;
+}
+
+#intro {
+    /* background: #7C0000; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#intro .left, #intro .right {
+    width: 50%;
+}
+
+#intro h2 {
+    font-size: 5rem;
+    font-family: Raleway;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+#intro h4 {
+    font-family: Martel;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+#intro img {
+    max-width: 100%;
+    filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+}
+
+section > h3 {
+    font-family: Raleway;
+    font-size: 10rem;
+    text-align: center;
+    background: linear-gradient(100deg, #db3535, rgba(124, 0, 0, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5rem;
+}
+
+.logos {
+    /* background: #f3f5f6; */
+    margin-top: 10rem;
+}
+
+.logos h3 {
+    text-align: center;
+    margin-bottom: 12rem;
+}
+
+.logos .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12rem;
+}
+
+.logos .grid img {
+    width: 100%;
+}
+
+.splitted {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.splitted .left, .splitted .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.splitted img {
+    max-width: 100%;
+    max-height: 400px;
+    align-self: center;
+}
+
+.splitted p {
+    font-size: 1.75rem;
+    line-height: 1.5;
+}
+
+.standout {
+    border-radius: .8rem;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    margin: 10rem 0;
+}
+
+.standout::before {
+    content: '';
+    background-image: linear-gradient(100deg, #db3535, rgba(124, 0, 0, 1) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.standout .angle {
+    z-index: -2;
+    min-height: initial;
+    top: 0;
+    width: 100%;
+}
+
+.standout .content {
+    padding: 0 10rem;
+}
+
+.standout .content h2 {
+    font-size: 5rem;
+    font-family: Raleway;
+    margin-bottom: 4rem;
+}
+
+.standout .content p {
+    font-family: Martel;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#contact {
+    padding-bottom: 7rem;
+}
+
+#contact p {
+    font-family: Martel;
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+section.block_list {
+    display: grid;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 3rem 0;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #FAFBFC;
+    border-radius: .8rem;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 6%), 0px 0px 2px rgb(0 0 0 / 6%), 0px 2px 10px rgb(0 0 0 / 7%);
+    color: #002F46;
+    padding: 3rem;
+}
+
+.block i.icon {
+    background: linear-gradient(100deg, #db3535, rgba(124, 0, 0, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    width: fit-content;
+    margin-bottom: 3rem;
+}
+
+.block h4 {
+    font-size: 3rem;
+    font-family: Raleway;
+    font-weight: 600;
+}
+
+#contact .block p {
+    font-family: Martel;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    opacity: 0.5;
+    text-align: left;
+}
+
+.block a {
+    font-family: Martel;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background: linear-gradient(100deg, #db3535, rgba(124, 0, 0, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    margin-top: auto;
+}
+
+.block a i {
+    font-weight: 800;
+    transition: .2s;
+}
+
+.block a:hover {
+    background: linear-gradient(100deg, rgba(124, 0, 0, 1), #db3535 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+.block a:hover i {
+    margin-left: .5rem;
+}
+
+@media screen and (min-width: 2000px) {
+    body:before {
+        height: 85rem;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    body:before {
+        height: 70rem;
+    }
+
+    section {
+        padding: 4rem; 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body:before {
+        height: 65rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .angle {
+        width: 92%;
+        top: -70%;
+    }
+
+    #intro {
+        flex-direction: column-reverse;
+    }
+
+    #intro .left, #intro .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    #intro h4 {
+        text-align: center;
+    }
+
+    #intro a.contact {
+        margin-bottom: 4rem;
+    }
+
+    section.block_list {
+        row-gap: 30px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 3rem 0;
+    }
+}
